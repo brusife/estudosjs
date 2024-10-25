@@ -1,22 +1,14 @@
-/*function gerarLogo(){
+function gerarLogo(){
     const name = document.getElementById("name")
     const res = document.getElementById('res')
     const select = document.getElementById('tema')
     const selecionado = select.value
-    const opcoes = { //objeto com escolhas do tema
-        fut: 'resfuturista',
-        ret: 'resretro',
-        emp: 'resemp',
-        div: 'resdiv',
-        hal: 'reshal'
-      };
-
     if (name.value == "") {
         alert("Preencha o campo TEXTO...")
     }
     
     else {
-
+        res.setAttribute("class", "")
         if(selecionado == "fut") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resfuturista")
@@ -38,7 +30,8 @@
             res.classList.add("reshal")
         }
     }
-}*/
+}
+/*
   const opcoes = {
     fut: 'resfuturista',
     ret: 'resretro',
@@ -57,9 +50,9 @@
       alert('Preencha o campo TEXTO...');
       return;
     }
-
+    
     res.innerHTML = `<h1>${nome.value.trim()}</h1>`;
-    res.classList.add(opcoes[selecionado]);
+    res.classList.add(opcoes.selecionado);
   }
 
-  document.getElementById('logo').addEventListener('click', gerarLogo);
+  document.getElementById('logo').addEventListener('click', gerarLogo);*/
