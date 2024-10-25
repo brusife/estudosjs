@@ -2,32 +2,41 @@ function gerarLogo(){
     const name = document.getElementById("name")
     const res = document.getElementById('res')
     const select = document.getElementById('tema')
+    const bot = document.getElementById('salvar')
+    const tlogo = document.getElementById('logo')
     const selecionado = select.value
-    if (name.value == "") {
-        alert("Preencha o campo TEXTO...")
+    if (name.value.trim() === "") {
+        alert("[ERRO] - Tente novamente escrevendo alguma coisa...")
     }
     
     else {
         res.setAttribute("class", "")
+        bot.setAttribute("class", "")
+        tlogo.setAttribute("value", "OUTRO LOGO")
         if(selecionado == "fut") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resfuturista")
+            bot.classList.add("salvarat")
         }
         if(selecionado == "ret") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resretro")
+            bot.classList.add("salvarat")
         }
         if(selecionado == "emp") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resemp")
+            bot.classList.add("salvarat")
         }
         if(selecionado == "div") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resdiv")
+            bot.classList.add("salvarat")
         }
         if(selecionado == "hal") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("reshal")
+            bot.classList.add("salvarat")
         }
     }
 }

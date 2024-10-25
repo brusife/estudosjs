@@ -54,9 +54,6 @@ body {
     align-items: center;
     gap: 20px;
   }
-  article div#res {
-    
-  }
   
   input#name {
     border-style: none;
@@ -89,19 +86,12 @@ body {
     padding: 8px 60px;
   }
   
-  fieldset {
-    max-width: 800px;
-    border-radius: 20px;
-    border-style: solid;
-    border-color: #712e92;
-  }
-
   /*FUTURISTA */
   div.resfuturista {
     border-radius: 20px;
     margin: auto;
-    width: 340px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: url(imgs/fundofuturista.jpg);
     background-position: center center;
   }
@@ -113,12 +103,14 @@ body {
     text-align: center;
     align-items: center;
   }
+
   /*RETRÔ*/
+
   div.resretro {
     border-radius: 20px;
     margin: auto;
-    width: 340px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: url(imgs/fundoretro.jpg);
     background-position: center center;
   }
@@ -135,8 +127,8 @@ body {
   div.resemp {
     border-radius: 20px;
     margin: auto;
-    width: 340px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: url(imgs/fundoemp.jpg);
     background-position: center center;
   }
@@ -154,8 +146,8 @@ body {
   div.resdiv {
     border-radius: 20px;
     margin: auto;
-    width: 340px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: url(imgs/fundoeng.jpg);
     background-position: center center;
   }
@@ -173,8 +165,8 @@ body {
   div.reshal {
     border-radius: 20px;
     margin: auto;
-    width: 340px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     background: url(imgs/fundohal.jpg);
     background-position: center center;
   }
@@ -185,4 +177,30 @@ body {
     font-size: 3rem;
     text-align: center;
     align-items: center;
+  }
+
+  /*Botão para salvar figurinha*/
+
+  input#bs {
+    padding: 8px 40px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: .9rem;
+    transition: 0.5s;
+  }
+  input#bs:hover {
+    color: rgb(255, 253, 122);
+    cursor: pointer;
+  }
+
+  div.salvar {
+    display: none;
+  }
+
+  div.salvarat {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
   }
