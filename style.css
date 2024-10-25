@@ -42,18 +42,20 @@ body {
   }
   
   article {
+    border-style: solid;
     padding: 20px;
     border-radius: 20px;
     background-color: rgb(219, 219, 219);
   }
   article div#dados {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
   }
   article div#res {
-    padding-top: 50px;
+    
   }
   
   input#name {
@@ -88,6 +90,7 @@ body {
   }
   
   fieldset {
+    max-width: 800px;
     border-radius: 20px;
     border-style: solid;
     border-color: #712e92;
@@ -97,7 +100,7 @@ body {
   div.resfuturista {
     border-radius: 20px;
     margin: auto;
-    width: 600px;
+    width: 340px;
     height: 200px;
     background: url(imgs/fundofuturista.jpg);
     background-position: center center;
@@ -106,7 +109,7 @@ body {
     font-family: var(--futurista);
     color: white;
     text-shadow: 2px 2px 5px black;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-items: center;
   }
@@ -114,7 +117,7 @@ body {
   div.resretro {
     border-radius: 20px;
     margin: auto;
-    width: 600px;
+    width: 340px;
     height: 200px;
     background: url(imgs/fundoretro.jpg);
     background-position: center center;
@@ -123,7 +126,7 @@ body {
     font-family: var(--retro);
     color: white;
     text-shadow: 2px 2px 5px black;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-items: center;
   }
@@ -132,7 +135,7 @@ body {
   div.resemp {
     border-radius: 20px;
     margin: auto;
-    width: 600px;
+    width: 340px;
     height: 200px;
     background: url(imgs/fundoemp.jpg);
     background-position: center center;
@@ -141,7 +144,7 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     text-shadow: 2px 2px 5px black;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-items: center;
   }
@@ -151,7 +154,7 @@ body {
   div.resdiv {
     border-radius: 20px;
     margin: auto;
-    width: 600px;
+    width: 340px;
     height: 200px;
     background: url(imgs/fundoeng.jpg);
     background-position: center center;
@@ -160,7 +163,7 @@ body {
     font-family: cursive;
     color: white;
     text-shadow: 2px 2px 5px black;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-items: center;
   }
@@ -170,16 +173,16 @@ body {
   div.reshal {
     border-radius: 20px;
     margin: auto;
-    width: 600px;
+    width: 340px;
     height: 200px;
     background: url(imgs/fundohal.jpg);
     background-position: center center;
   }
   div.reshal  h1 {
     font-family: var(--halloween);
-    color: rgb(164, 66, 177);
+    color: rgb(255, 179, 37);
     text-shadow: 2px 2px 5px black;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
     align-items: center;
   }
