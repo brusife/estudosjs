@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div><img src="../imgs/dev.png" alt="Logo"></div>
+        <div><h1>EX. JAVASCRIPT</h1></div>
+    </header>
+    <section>
+        <h1>02. Operações Matemáticas</h1>
+        <article>
+            <div id="choices">
+                <div onclick="MostraSom()">Soma</div>
+                <div onclick="MostraSub()">Subtração</div>
+                <div onclick="MostraMult()">Multiplicação</div>
+                <div onclick="MostraDiv()">Divisão</div>
+            </div>
+            <div id="res">
+                <div id="operation">
+                    <div><input type="number" name="n1" id="n1"></div> <div id="sinal">Sinal</div>
+                    <div><input type="number" name="n2" id="n2"></div>
+                    <div id="cal" onclick="Calcular()">CALCULAR</div>
+                </div>
+                <div id="resf"></div>
+            </div>
+        </article>
+    </section>
+    <script src="mostraoperador.js"></script>
+    <script src="calcular.js"></script>
+</body>
+</html>

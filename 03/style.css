@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #712e92, #321142) ; 
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    color: white;
+  }  
+  section {
+    max-width: 900px;
+    margin: auto;
+  }
+  section h1 {
+    padding-top: 50px;
+    color: rgb(241, 181, 50);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  article {
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+  }
+  article div#choices {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  div#choices div {
+    padding: 5px 10px;
+    border-style: solid;
+    border-color: #321142;
+    border-radius: 5px;
+    transition: .2s;
+  }
+  div#choices div:hover {
+    color: yellow;
+    padding: 5px 15px ;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #321142, #833ba7);
+  }
+  div#res {
+    height: 0px;
+    opacity: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    transition: .2s;
+  }
+  div#resa {
+    opacity: 1;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    transition: .2s;
+  }
+  #n1, #n2 {
+    background: none;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #321142;
+    font-size: 1.3rem;
+    width: 3rem;
+    height: 3rem;
+  }
+  div#operation {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+  div#resf {
+    align-content: center;
+    text-align: center;
+  }
+
+  #cal {
+    padding: 5px 10px;
+    border-style: solid;
+    border-color: #321142;
+    border-radius: 5px;
+    transition: .2s;
+  }
+  #cal:hover {
+    color: yellow;
+    padding: 5px 15px ;
+    cursor: pointer;
+    background-image: linear-gradient(to bottom, #321142, #833ba7);
+  }
