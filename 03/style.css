@@ -73,7 +73,7 @@ body {
     opacity: 1;
     padding: 20px;
     display: grid;
-    grid-template-columns: 25% 1fr;
+    grid-template-columns: 45% 1fr;
     transition: .2s;
   }
   #n1, #n2 {
