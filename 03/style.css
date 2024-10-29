@@ -73,7 +73,7 @@ body {
     opacity: 1;
     padding: 20px;
     display: grid;
-    grid-template-columns: 30% 1fr;
+    grid-template-columns: 25% 1fr;
     transition: .2s;
   }
   #n1, #n2 {
@@ -86,6 +86,7 @@ body {
     height: 3rem;
   }
   div#operation {
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -108,4 +109,10 @@ body {
     padding: 5px 15px ;
     cursor: pointer;
     background-image: linear-gradient(to bottom, #321142, #833ba7);
+  }
+
+  #resf {
+    text-align: center;
+    font-size: 1.7rem;
+    border-left: #321142 solid;
   }
