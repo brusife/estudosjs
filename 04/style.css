@@ -1,0 +1,117 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #712e92, #321142) ; 
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header h1 {
+    color: white;
+  }  
+  section {
+    max-width: 900px;
+    margin: auto;
+  }
+  section h1 {
+    padding-top: 50px;
+    color: rgb(241, 181, 50);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  article {
+    overflow: hidden;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(219, 219, 219);
+  }
+
+  #titulo{
+    margin: -20px;
+    margin-bottom: 20px;
+    height: 150px;
+    background: url(../imgs/fundoagenda.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  #incluir {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input#tarefa {
+    height: 2rem;
+    text-align: center;
+    width: 80vw;
+    border-style: none;
+    border-radius: 8px;
+  }
+
+  #incluir img {
+    width: 36px;
+    height: 36px;
+  }
+
+  #incluir img:hover {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+  }
+
+  #ttar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #ttar img {
+    width: 20px;
+  }
+
+  
+  #lista {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #lista img {
+    width: 20px;
+  }
+
+  #conc {
+    border-radius: 8px;
+    width: 20px;
+    height: 20px;
+    border-style: solid;
+  }
+
+  #ttar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .item {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
