@@ -115,3 +115,11 @@ body {
     align-items: center;
     justify-content: space-between;
   }
+
+  .excluir:hover {
+    cursor: pointer;
+  }
+
+  #conc:hover {
+    cursor: pointer;
+  }
