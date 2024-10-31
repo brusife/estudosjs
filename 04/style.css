@@ -56,6 +56,7 @@ body {
   }
 
   input#tarefa {
+    font-size: 1.3rem;
     height: 2rem;
     text-align: center;
     width: 80vw;
@@ -70,8 +71,6 @@ body {
 
   #incluir img:hover {
     cursor: pointer;
-    width: 40px;
-    height: 40px;
   }
 
   #ttar {
@@ -94,11 +93,16 @@ body {
     width: 20px;
   }
 
-  #conc {
+  .conc {
     border-radius: 8px;
     width: 20px;
     height: 20px;
     border-style: solid;
+    border-width: 2px;
+  }
+
+  .conc:hover {
+    cursor: pointer;
   }
 
   #ttar:hover {
@@ -113,13 +117,9 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    gap: 10px;
   }
 
   .excluir:hover {
-    cursor: pointer;
-  }
-
-  #conc:hover {
     cursor: pointer;
   }

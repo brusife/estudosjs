@@ -8,20 +8,20 @@ function AdcTarefa() {
         let tarefa = document.getElementById('tarefa')
         lista.push(tarefa.value)
         item.classList.add('item')
-        item.innerHTML = `<div id="conc" onclick="Check(this)"></div>
-        <div> ${tarefa.value} </div>
-        <div class="excluir" onclick="Remover()"><img src="../imgs/remover.png" alt=""></div>`
+        item.innerHTML = `<div class="conc" onclick="Check(this)"></div>
+        <div> ${tarefa.value} </div>`
         listaf.appendChild(item)
+        tarefa.value = ""
     }else {
         alert("Digite uma tarefa")
     }
 }
 
-function Remover() {
-    listaf.lastChild.remove(); // Remove elemento HTML
-  }
-
-function Check() {
-    check.innerHTML = `
+function Check(elemento) {
+    if (elemento.innerHTML== "") {
+        elemento.innerHTML = `
         <img src="../imgs/check.png">`
+    } else {
+        elemento.innerHTML = ""
+    }
   }
