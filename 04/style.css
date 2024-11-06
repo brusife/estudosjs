@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
   }
   
-  header {
+header {
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -16,14 +16,15 @@ body {
     align-items: center;
   }
 
-  header h1 {
+header h1 {
     color: white;
   }  
-  section {
+
+section {
     max-width: 900px;
     margin: auto;
   }
-  section h1 {
+section h1 {
     padding-top: 50px;
     color: rgb(241, 181, 50);
     font-size: 2rem;
@@ -31,95 +32,112 @@ body {
     font-weight: bolder;
   }
   
-  article {
+article {
+    margin: 20px;
     overflow: hidden;
-    border-style: solid;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 10px 0;
     background-color: rgb(219, 219, 219);
   }
 
-  #titulo{
+#titulo{
     margin: -20px;
     margin-bottom: 20px;
-    height: 150px;
+    height: 200px;
     background: url(../imgs/fundoagenda.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
   }
 
-  #incluir {
+#incluir {
     display: flex;
-    gap: 10px;
     justify-content: center;
     align-items: center;
   }
 
-  input#tarefa {
-    font-size: 1.3rem;
-    height: 2rem;
+input#tarefa {
+    font-size: 1rem;
+    height: 3rem;
+    flex-basis: 50%;
+    border-radius: 15px 0 0 5px;
     text-align: center;
-    width: 80vw;
     border-style: none;
-    border-radius: 8px;
   }
 
-  #incluir img {
-    width: 36px;
-    height: 36px;
-  }
+#adc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 15px 5px 0;
+  background-image: linear-gradient(to right, #712e92, #321142);
+  color: white;
+  height: 3.1rem;
+  flex-basis: 15%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: .3s;
+}
 
-  #incluir img:hover {
-    cursor: pointer;
-  }
+#adc:hover {
+  font-size: 2rem; 
+}
 
-  #ttar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.lista {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 
-  #ttar img {
-    width: 20px;
-  }
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  border: solid 1px black;
+  justify-content: center;
+  align-items: center;
+  padding: .8rem;
+  width: 80%;
+  border-radius: 8px;
+  margin: 3px;
+  cursor: pointer;
+}
 
-  
-  #lista {
-    display: flex;
-    flex-direction: column;
-  }
+.item-icone {
+  flex: 5%;
+  text-align: center;
+  font-size: 1.2rem;
+}
 
-  #lista img {
-    width: 20px;
-  }
+.item-texto {
+  flex: 70%;
+  padding: 5px;
+  border-left-style: solid;
+  border-width: 1px;
+}
 
-  .conc {
-    border-radius: 8px;
-    width: 20px;
-    height: 20px;
-    border-style: solid;
-    border-width: 2px;
-  }
+.item-remover {
+  flex: 5%;
+  display: flex;
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+  align-items: center;
+  height: 100%;
+}
 
-  .conc:hover {
-    cursor: pointer;
-  }
+.item.feito {
+  border-color: green;
+}
 
-  #ttar:hover {
-    text-decoration: underline;
-    cursor: pointer;
-    font-weight: bold;
-  }
+.item.feito .item-icone {
+  color: green;
+}
 
-  .item {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .excluir:hover {
-    cursor: pointer;
-  }
+.item.feito .item-texto {
+  color: rgba(25, 97, 25, 0.521);
+  text-decoration: line-through;
+}

@@ -5,21 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Coisas à Fazer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
 </head>
 <body>
     <header>
         <div><img src="../imgs/dev.png" alt="Logo"></div>
-        <div><h1>EX. JAVASCRIPT</h1></div>
+        <div><h1>Lista de tarefas</h1></div>
     </header>
     <section>
-        <h1>04. Coisas à fazer</h1>
         <article>
             <div id="titulo"></div>
             <div id="incluir">
-                <input type="text" name="tarefa" id="tarefa" maxlength="100" autocomplete="off"> <div id="adc"><img src="../imgs/adicionar-botao.png" alt="" onclick="AdcTarefa()"></div>
+                <input type="text" id="tarefa" autocomplete="off"> <div onclick="Adc()" id="adc"><span class="mdi mdi-note-plus"></span>
+                </div>
             </div>
-            <div id="lista"></div>
-
+            <div class="lista" id="lista">
+                <!--<div class="item">
+                    <div class="item-icone">
+                        <span class="mdi mdi-checkbox-blank-outline"></span>
+                    </div>
+                    <div class="item-texto">Exemplo de Tarefa</div>
+                    <div class="item-remover">
+                        <span class="mdi mdi-delete"></span>
+                    </div>
+                </div>-->
+                <!--<div class="item feito">
+                    <div class="item-icone">
+                        <span class="mdi mdi-check-bold"></span></span>
+                    </div>
+                    <div class="item-texto">Exemplo de Tarefa</div>
+                    <div class="item-remover">
+                        <span class="mdi mdi-delete"></span>
+                    </div>
+                </div>-->
+            </div>
         </article>
     </section>
     <script src="tarefas.js"></script>
