@@ -5,7 +5,7 @@ input.focus()
 let cont= 0
 
 function Adc(){
-    let inputcont = input.value
+    let inputcont = input.value.trim()
     if (inputcont !=="" && inputcont!==null && inputcont!==undefined) {
         cont ++
         let novoitem = `<div id="${cont}" class="item">
@@ -33,19 +33,15 @@ function Del(id){
 
 function Ok(id){
     var item = document.getElementById(id)
-    var classe = item.getAttribute('class')
-    if (classe == "item"){
+    var classe = item.getAttribute('class')    
+    var icone = document.getElementById('icone_'+ id)
+    if (classe === "item"){
         item.classList.add('feito')
-
-        
-        var icone = document.getElementById('icone_'+ id)
         icone.classList.remove('mdi-checkbox-blank-outline')
         icone.classList.add('mdi-check-bold')
-        item.parentNode.appendChild(item)
 
     }else {
         item.classList.remove('feito')
-        var icone = document.getElementById('icone_'+ id)
         icone.classList.add('mdi-checkbox-blank-outline')
         icone.classList.remove('mdi-check-bold')
     }

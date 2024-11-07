@@ -9,29 +9,53 @@ body {
   
 header {
     background-color: black;
+    padding-top: 50px;
+}
+
+.header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-header h1 {
-    color: white;
+#footer {
+  background-color: black;
+  margin-top: 15px;
+  padding: 35px;
+  text-align: center;
+  color: rgb(165, 165, 165);
+  font-size: .7rem;
+}
+
+#footer a {
+  color: #aa42df;
+}
+
+#topo {
+  padding-top: 20px;
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: .7rem;
+}
+
+.header img {
+    width: 50px;
+    padding-right: 20px;
+  }
+
+.header h1 {
+    color: #c5adeb;
+    font-size: 1.5rem;
   }  
 
 section {
     max-width: 900px;
     margin: auto;
+    min-height: 71% ;
   }
-section h1 {
-    padding-top: 50px;
-    color: rgb(241, 181, 50);
-    font-size: 2rem;
-    text-align: center;
-    font-weight: bolder;
-  }
-  
+
 article {
     margin: 20px;
     overflow: hidden;
@@ -124,7 +148,7 @@ input#tarefa {
   display: flex;
   text-align: center;
   font-size: 1.5rem;
-  color: red;
+  color: rgb(143, 5, 5);
   align-items: center;
   height: 100%;
 }
@@ -135,6 +159,7 @@ input#tarefa {
 
 .item.feito .item-icone {
   color: green;
+  font-size: 1.7rem;
 }
 
 .item.feito .item-texto {
