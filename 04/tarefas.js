@@ -10,9 +10,9 @@ function Adc(){
         cont ++
         let novoitem = `<div id="${cont}" class="item">
                     <div onclick="Ok(${cont})" class="item-icone">
-                        <span class="mdi mdi-checkbox-blank-outline"></span>
+                        <span id="icone_${cont}" class="mdi mdi-checkbox-blank-outline"></span>
                     </div>
-                    <div class="item-texto">${inputcont}</div>
+                    <div onclick="Ok(${cont})" class="item-texto">${inputcont}</div>
                     <div onclick="Del(${cont})"  class="item-remover">
                         <span class="mdi mdi-delete"></span>
                     </div>
@@ -36,8 +36,18 @@ function Ok(id){
     var classe = item.getAttribute('class')
     if (classe == "item"){
         item.classList.add('feito')
+
+        
+        var icone = document.getElementById('icone_'+ id)
+        icone.classList.remove('mdi-checkbox-blank-outline')
+        icone.classList.add('mdi-check-bold')
+        item.parentNode.appendChild(item)
+
     }else {
         item.classList.remove('feito')
+        var icone = document.getElementById('icone_'+ id)
+        icone.classList.add('mdi-checkbox-blank-outline')
+        icone.classList.remove('mdi-check-bold')
     }
 }
 
