@@ -5,14 +5,16 @@ function gerarLogo(){
     const bot = document.getElementById('salvar')
     const tlogo = document.getElementById('logo')
     const selecionado = select.value
+    name.focus()
     if (name.value.trim() === "") {
         alert("[ERRO] - Tente novamente escrevendo alguma coisa...")
     }
     
     else {
+        
         res.setAttribute("class", "")
         bot.setAttribute("class", "")
-        tlogo.setAttribute("value", "OUTRO LOGO")
+        tlogo.setAttribute("value", "Outra figurinha")
         if(selecionado == "fut") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("resfuturista")
@@ -36,6 +38,10 @@ function gerarLogo(){
         if(selecionado == "hal") {
             res.innerHTML = `<h1>${name.value}</h1>`
             res.classList.add("reshal")
+            bot.classList.add("salvarat")
+        }if(selecionado == "mot") {
+            res.innerHTML = `<h1>${name.value}</h1>`
+            res.classList.add("resmot")
             bot.classList.add("salvarat")
         }
     }

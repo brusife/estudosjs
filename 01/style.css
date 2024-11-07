@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+:root {
+  --futurista: "Audiowide", sans-serif;
+  --retro: "Sancreek", serif;
+  --halloween: "Creepster", system-ui;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #712e92, #321142) ; 
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-color: black;
+    padding-top: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+#footer {
+  background-color: black;
+  margin-top: 15px;
+  padding: 35px;
+  text-align: center;
+  color: rgb(165, 165, 165);
+  font-size: .7rem;
+}
+
+#footer a {
+  color: #aa42df;
+}
+
+#topo {
+  padding-top: 20px;
+  color: rgb(97, 97, 97);
+  text-align: center;
+  font-size: .7rem;
+}
+
+.header img {
+    width: 50px;
+    padding-right: 20px;
+  }
+
+.header h1 {
+    color: #c5adeb;
+    font-size: 1.5rem;
+  }  
+  
+  section {
+    min-height: 69vh;
+  }
+
+  article {
+    max-width: 800px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 20px 5px;
+    background-color: rgb(219, 219, 219);
+  }
+  article div#dados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  input#name {
+    border-style: none;
+    padding: 5px;
+    border-radius: 8px;
+    height: 2rem;
+    background: none;
+  }
+  
+  select {
+    padding: 10px;
+    border-style: none;
+    height: 3rem;
+    border-radius: 8px;
+    background: none;
+  }
+  
+  input#logo {
+    padding: 8px 40px;
+    border-style: none;
+    background-color: #321142;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: 0.5s;
+  }
+  input#logo:hover {
+    color: rgb(255, 253, 122);
+    cursor: pointer;
+    padding: 8px 60px;
+  }
+  
+  /*FUTURISTA */
+  div.resfuturista {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundofuturista.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.resfuturista  h1 {
+    font-family: var(--futurista);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /*RETRÔ*/
+
+  div.resretro {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundoretro.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.resretro  h1 {
+    font-family: var(--retro);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+  /*CORPORATIVO*/
+
+  div.resemp {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundoemp.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.resemp  h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /* DIVERTIDO*/
+
+  div.resdiv {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundoeng.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.resdiv  h1 {
+    font-family: cursive;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /*HALLOWEEN*/
+  
+  div.reshal {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundohal.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.reshal  h1 {
+    font-family: var(--halloween);
+    color: rgb(255, 179, 37);
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+  /*MOTIVACIONAL*/
+  
+  div.resmot {
+    border-radius: 20px;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background: url(../imgs/fundomot.jpg);
+    background-position: center center;
+    background-size: cover;
+  }
+  div.resmot h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(247, 245, 242);
+    text-shadow: 2px 2px 5px black;
+    font-size: 3rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  /*Botão para salvar figurinha*/
+
+  input#bs {
+    padding: 8px 40px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    font-size: .9rem;
+    transition: 0.5s;
+  }
+  input#bs:hover {
+    color: rgb(255, 253, 122);
+    cursor: pointer;
+  }
+
+  div.salvar {
+    display: none;
+  }
+
+  div.salvarat {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
