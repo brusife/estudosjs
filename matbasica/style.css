@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
-
 body {
     height: 100vh;
     margin: 0px;
@@ -10,19 +6,46 @@ body {
     background-image: linear-gradient(to bottom, #712e92, #321142) ; 
     background-attachment: fixed;
   }
-  
+
   header {
     background-color: black;
+    padding-top: 50px;
+}
+
+.header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-  header h1 {
-    color: white;
+  .header img {
+    width: 50px;
+    padding-right: 20px;
+  }
+
+.header h1 {
+    color: #c5adeb;
+    font-size: 1.5rem;
   }  
+
+  section {
+    min-height: 69vh;
+  }
+
+#footer {
+  background-color: black;
+  margin-top: 15px;
+  padding: 35px;
+  text-align: center;
+  color: rgb(165, 165, 165);
+  font-size: .7rem;
+}
+
+#footer a {
+  color: #aa42df;
+}
   section {
     max-width: 900px;
     margin: auto;
@@ -36,9 +59,9 @@ body {
   }
   
   article {
-    border-style: solid;
+    margin-top: 30px;
     padding: 20px;
-    border-radius: 20px;
+    border-radius: 20px 5px;
     background-color: rgb(219, 219, 219);
   }
   article div#choices {
