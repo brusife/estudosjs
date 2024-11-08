@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
+
+:root {
+  --fontprincipal: "Trade Winds", system-ui;
+}
+
+body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #712e92, #321142) ; 
+    background-attachment: fixed;
+  }
+  
+header {
+    background-color: black;
+    padding-top: 50px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+.header img {
+    width: 50px;
+    padding-right: 20px;
+  }
+
+.header h1 {
+    color: #c5adeb;
+    font-size: 1.5rem;
+  }  
+
+section {
+    max-width: 900px;
+    margin: auto;
+    min-height: 71% ;
+  }
+
+#titulo h2 {
+  text-align: center;
+  color: goldenrod;
+  text-shadow: 0 0 3px black;
+  font-family: var(--fontprincipal);
+  font-size: 3rem;
+  margin: 0;
+  
+}
+
+#titulo h3 {
+  font-size: 1rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.534);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#titulo {
+  display: flex;
+  flex-flow: column wrap;
+
+}
+
+article {
+    margin: 10px;
+    border-radius: 25px 5px;
+    min-height: 50vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    animation: cb 30s infinite;
+  }
+
+  @keyframes cb {
+    0% {
+      background: url(../imgs/fundologin00.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    25% {
+      background: url(../imgs/fundologin01.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    50% {
+      background: url(../imgs/fundologin02.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    
+    75% {
+      background: url(../imgs/fundologin03.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+
+    100% {
+      background: url(../imgs/fundologin00.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+
+  .cont {
+    background: rgba(0, 0, 0, 0.445);
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 200px;
+    backdrop-filter: blur(2px);
+    padding: 30px;
+    border-radius: 35px 5px;
+    gap: 25px;
+    color: goldenrod;
+    font-size: 1.6rem;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    margin-bottom: 40px;
+  }
+
+  .cont > div {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .cont input, .cont select {
+    background: rgba(82, 82, 82, 0.445);
+    height: 1.7rem;
+    border-style: solid;
+    border-color: goldenrod;
+    border-width: 1px;
+    border-radius: 10px 2px;
+    color: goldenrod;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .cont input:focus, .cont select:focus {
+    border: none;
+    outline-width: 1px;
+    outline-color: goldenrod;
+  }
+
+#aent {
+  width: 100%;
+}
+
+  #entrar {
+    align-self: end;
+    width: 100%;
+    background-color: goldenrod;
+    padding: 7px;
+    border: none;
+    border-radius: 15px;
+    font-family: var(--fontprincipal);
+    color: #321142;
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+
+#aviso {
+  position: absolute;
+  z-index: 2;
+  top: -300px;
+  left: 15%;
+  text-align: center;
+  background-color: #ffffffe7;
+  color: #321142;
+  padding-top: 30px; 
+  width: 70%;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 2px 9px rgba(0, 0, 0, 0.808);
+  transition: .3s;
+}
+
+
+#aviso img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+
+#enome {
+  font-size: 1.3rem;
+  font-family: var(--fontprincipal);
+}
+
+  #footer {
+    background-color: black;
+    margin-top: 15px;
+    padding: 35px;
+    text-align: center;
+    color: rgb(165, 165, 165);
+    font-size: .7rem;
+  }
+  
+  #footer a {
+    color: #aa42df;
+  }
+  

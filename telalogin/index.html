@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div><img src="../imgs/logo.jpg" alt="Logo"></div>
+            <div><h1>Login p/ +18 anos</h1></div>
+        </div>
+    </header>
+    <div id="aviso">
+        <img src="../imgs/perfilterror.jpg">
+        <p>Bem vindo(a) <span id="enome">nome</span></p></div>
+    <!--<div id="proibido">
+        <p>Bem vindo(a) <span id="enome">FULANO</span></p></div>-->
+    <section>
+        <article>
+            <div id="titulo"><h2>HorroR MovieS</h2> <h3>apenas para maiores</h3></div>
+            <div class="cont" id="conteudo">
+                <div id="nome">
+                    <span class="mdi mdi-account-box-outline"></span>
+                    <input type="text"id="name" autocomplete="off">
+                </div>
+                <div id="idade">
+                    <span class="mdi mdi-calendar-range"></span>
+                    <select id="nasc">
+                        <option selected disabled>Sua Idade</option>
+                    </select>
+                </div>
+                <div id="aent"><button id="entrar" onclick="Mostrar(), Exibir()">Entrar</button></div>
+            </div>
+        </article>
+    </section>
+    <script src="tarefas.js"></script>
+    <footer><div id="footer">Site desenvolvido por <a href="https://www.linkedin.com/in/brunosimonferreira/" target="_blank">BRUNO SIMON FERREIRA</a></div></footer>
+</body>
+</html>
