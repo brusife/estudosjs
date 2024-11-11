@@ -5,7 +5,7 @@ let idades = document.getElementById('nasc')
 var passo
 
 for (passo = 1; passo <= 90; passo++) {
-    let opt = document.createElement('option')
+    const opt = document.createElement('option')
     opt.value = passo
     opt.text = passo
     idades.appendChild(opt)
@@ -15,10 +15,16 @@ function Mostrar() {
     let tnome = input.value.trim()
     if (tnome !== "" && tnome !== undefined && tnome !== null) {        
     aviso.style.top="0"
-    aviso.innerHTML= `
+    if (idades.value <=18 || idades.value == "Sua Idade") {
+        aviso.innerHTML = `<p><span class="mdi mdi-cancel"></span> Você não tem idade suficiente para ver esses conteúdos...</p>`
+    } else {
+        aviso.innerHTML= `
     <img src="../imgs/perfilterror.jpg">
         <p>Bem vindo(a) <span id="enome">${tnome} </span></p>
     `
+    Exibir()
+    }
+    
     setTimeout(function voltar() {
         aviso.style.top="-300px"
     }, 3000)
@@ -28,5 +34,20 @@ function Mostrar() {
 }
 
 function Exibir() {
-    cont.innerHTML = ""
+    let tnome = input.value.trim()
+    if (tnome !== "" && tnome !== undefined && tnome !== null) {
+        cont.classList.remove('cont')
+        cont.classList.add('bemvindo')
+        cont.innerHTML = `<div id="bv"><p>Bem vindo (a) <span id="nomebv">${tnome}</span></p>
+                <p>Aproveite seus pesadelos...</p>
+                    <img src="../imgs/filmes.jpg" alt="">
+            <p>*Esse site é só um estudo e não tem nenhum tipo de conteúdo de filme de terror, ou trecho deles...</p>
+            <button id="entrar" onclick="Sair()">Sair</button>
+            </div>`
+    }
+    
+}
+
+function Sair (){
+    history.go(0)
 }
